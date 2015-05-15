@@ -19,5 +19,5 @@ for database transactions.
 
 MyTickets also uses a RESTful API namely Rotten Tomatoes for fetching movie informations.
 
-For the client side programming HTML, CSS, Javascript and JQuery are used for making a clean and intera-
-ctive UI. Used Bootstrap for enchanced look and user experience.
+For the client side programming HTML, CSS, Javascript and JQuery are used for making a clean and interactive
+UI. Used Bootstrap for enchanced look and user experience.
