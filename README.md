@@ -16,3 +16,8 @@ requiests and directing them to relevent service layer. The Service layer contai
 it is responsible for processing and performing task corresponding to a url request. The third layer is DAO
 layer, it is responsible for performing database CRUD operations. MyTickets uses Hibernate at the DAO layer
 for database transactions.
+
+MyTickets also uses a RESTful API namely Rotten Tomatoes for fetching movie informations.
+
+For the client side programming HTML, CSS, Javascript and JQuery are used for making a clean and intera-
+ctive UI. Used Bootstrap for enchanced look and user experience.
