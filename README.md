@@ -4,7 +4,7 @@ Web Tools and Development
 mytickets.com is an online movie ticket reservation website.
 
 The project contains mainly backend code with basic UI appearances and functionalities. 
-MyTickects is a maven project created using Spring MVC(Model, View and Controller) architecture pattern
+MyTickets is a maven project created using Spring MVC(Model, View and Controller) architecture pattern
 with Hibernate as an ORM(Object Relational Mapping) tool. All the controllers are fully annotated and 
 the dependencies are injected in runtime using DI(dependency injection) feature of the spring framwork.
 The hibernate mappings are also implemented by annotationing the POJO's or Entities.
