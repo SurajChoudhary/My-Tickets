@@ -92,17 +92,16 @@ public class MyTicketBookingController {
 		return "showtime";
 	}
 	
-//	@RequestMapping(value = "/getCinemaList", method= RequestMethod.POST, produces =
-//			"application/json", headers = "Accept=application/json")
-//	@ResponseBody public List<Cinema> sendCinemaList(HttpServletRequest request, Model model) {
-//
-//		int cityId = Integer.parseInt(request.getParameter("pid"));
-//		System.out.println(cityId);
-//		List<Cinema> list= cinemaService.listCinemaByCity(cityId);
-//		System.out.println(list.get(0));
-//		return list;
-//		
-//	}
+	@RequestMapping(value = "/getCinemaList", method= RequestMethod.POST, produces =
+			"application/json", headers = "Accept=application/json")
+	@ResponseBody public List<Cinema> sendCinemaList(HttpServletRequest request, Model model) {
+
+		int cityId = Integer.parseInt(request.getParameter("pid"));
+		System.out.println(cityId);
+		List<Cinema> list= cinemaService.listCinemaByCity(cityId);
+		System.out.println(list.get(0));
+		return list;
+	}
 	
 //	Send JSON Resposne to controller
 	
@@ -240,9 +239,9 @@ public class MyTicketBookingController {
 	public String bookingPaymentSucess(@ModelAttribute @Valid Payment payment,
 			BindingResult result, Model model, HttpServletRequest request) {
 
-//		PaymentValidator validator= new PaymentValidator();
-//		validator.validate(payment, result);
-//		
+		PaymentValidator validator= new PaymentValidator();
+		validator.validate(payment, result);
+		
 //		if (result.hasErrors()) {
 //			BookMovieForm form= (BookMovieForm) request.getSession().getAttribute("bookMovieForm");
 //			double total = form.getShowtime().getTicketPrice() * form.getNumberOfTickets();
